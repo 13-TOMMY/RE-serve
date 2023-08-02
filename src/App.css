@@ -1,0 +1,24 @@
+/* Color Variables */
+:root {
+  /* Background */
+  --color-background: #333333; /* Washed-out Black */
+  /* Accent */
+  --color-accent: #4B5320; /* Darker Green (Military Green) */
+  /* Text */
+  --color-text: #F9F5E3; /* Creamy White */
+  /* Boxes/Cards */
+  --color-boxes-cards: #222222; /* Darker Black */
+  /* Buttons */
+  --color-button: #4B5320; /* Darker Green (Military Green) */
+  --color-button-hover: #6B7520; /* Lighter Green Shade */
+  --color-button-secondary: #6F7255; /* Desaturated Button Color */
+  /* Messages */
+  --color-error: #FFCCCC; /* Light Red */
+  --color-success: #C0E8B5; /* Pale Mint Green */
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
