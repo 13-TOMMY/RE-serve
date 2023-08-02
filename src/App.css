@@ -1,3 +1,11 @@
+/* Font Variables */
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root {
+    /*Fonts*/
+    --modern-font: 'Montserrat', sans-serif;
+    --script-font:  'Croissant One', cursive;
+  }
 /* Color Variables */
 :root {
   /* Background */
@@ -16,9 +24,9 @@
   --color-error: #FFCCCC; /* Light Red */
   --color-success: #C0E8B5; /* Pale Mint Green */
 }
-
 *{
   margin:0;
   padding:0;
   box-sizing: border-box;
+  text-decoration: none;
 }
