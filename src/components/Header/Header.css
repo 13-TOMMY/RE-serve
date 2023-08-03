@@ -2,57 +2,71 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
     height: 90px;
     width: 100vw;
     padding: 0 50px;
     background-color: var(--color-boxes-cards);
+    z-index: 999;
 }
 /*Left*/
+.menu-btn-h{
+    width: 33.3%;
+}
 .menu-logo-h{
     color: var(--color-text);
     width: 50px;
     height: 50px;
     cursor: pointer;
+    transition: 2s;
 }
-.menu-logo-h:hover{
-    color: var(--color-button-hover);;
+.open-h{
+    color: var(--color-button-hover);
+    transform: rotate(-270deg);
+}
+.close-h{
+    color: var(--color-text);
+    transform: rotate(0deg);
 }
 /*Left modal*/
-.menu-modal-container {
-    position: fixed;
-    top: 90px; 
+.menu-div-container {
+    position: absolute;
+    top: 90px;
     left: 0;
-    width: 440px;
-    height: 250px;
+    width: 100vw;
+    height: 40px;
     background-color: var(--color-boxes-cards);
-    border-radius: 0 0 100px 0;
-    overflow-y: scroll;
-}
-.link-mm-container{
+    border-radius: 0 0 6px 6px;
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
-    flex-direction: column;
-    padding-left: 50px;
 }
-.text-mm-link{
+.link-md-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.text-md-link{
     color: var(--color-text);
     font-family: Montserrat;
-    font-size: 48px;
+    font-size: 18px;
     font-weight: 600;
-    width: 320px;
+    width: fit-content;
+    height: 20px;
 }
 .selected-link{
-    color: #4B5320;
+    color: var(--color-button-hover);
     font-family: Croissant One;
-    font-size: 48px;
+    font-size: 18px;
     font-weight: 400;
 }
 /*Middle*/
 .logo-h-container{
     display: flex;
     align-items: flex-end;
+    justify-content: center;
     gap: 10px;
+    width: 33.3%;
 }
 .re-logo-h{
     color: var(--color-text);
@@ -61,6 +75,12 @@
     font-style: normal;
     font-weight: 700;
 }
+@keyframes colorChangeAnimation {
+    0% { color: var(--color-text); } 
+    40% { color: var(--color-button-secondary); } 
+    70% { color: var(--color-button-hover); } 
+    100% { color: #4B5320; }
+  }
 .serve-logo-h{
     color: var(--color-accent);
     font-family: Croissant One;
@@ -68,54 +88,36 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    animation: colorChangeAnimation 3s ease-out;
 }
 /*Right*/
-.account-logo-h{
-    color: var(--color-text);
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-}
-.account-logo-h:hover{
-    color: var(--color-button-hover);;
-}
-/*Right modal*/
-.account-modal-container {
-    position: fixed;
-    top: 90px; 
-    right: 0;
-    width: 220px;
-    height: 200px;
-    background-color: var(--color-boxes-cards);
-    border-radius: 0 0 0 100px;
-    overflow-y: scroll;
-}
-.am-btn-container{
+.account-btns-h{
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    flex-direction: column;
-    padding-right: 50px;
+    align-items: center;
+    justify-content: flex-end;
     height: 100%;
-    gap: 20px;
+    gap: 10px;
+    width: 33.3%;
 }
-.am-btn{
-    width: 100px;
-    height: 50px;
+.a-btn{
+    width: 90px;
+    height: 35px;
     color: var(--color-text);
     font-family: Montserrat;
     font-size: 18px;
-    font-weight: 600;
-    border-radius: 24px;
+    font-weight: 500;
+    border-radius: 12px;
     cursor: pointer;
     border: none;
+    transition: 1s;
 } 
-.login-am-btn{
+.login-a-btn{
     background-color: var(--color-accent);
 }
-.signup-am-btn{
+.signup-a-btn{
     background-color: var(--color-button-secondary);
 }
-.login-am-btn:hover, .signup-am-btn:hover{
-    background-color: var(--color-button-hover);
+.login-a-btn:hover, .signup-a-btn:hover{
+    background-color: var(--color-boxes-cards);
+    border: 1px solid var(--color-button-secondary);
 }
