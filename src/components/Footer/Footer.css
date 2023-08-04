@@ -1,5 +1,6 @@
 .footer-container{
   background-color: var(--color-background);
+  z-index: 999;
 }
 .footer {
   height: 60px;
