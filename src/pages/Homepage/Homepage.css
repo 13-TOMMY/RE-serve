@@ -1,3 +1,28 @@
-.homepage-container{
-    background-color: var(--color-background);
+.homepage-container {
+  background-color: var(--color-background);
+  display: flex;
+  justify-content: center;
+}
+
+.left-homepage-container {
+  width: 50vw;
+  height: 2000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Add this to prevent content overflow */
+}
+
+.right-homepage-container {
+  width: 50vw;
+  height: 2000px;
+}
+
+.ramen-bowl-container {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

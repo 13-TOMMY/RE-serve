@@ -1,18 +1,21 @@
-import React from 'react'
-import Welcome from '../../components/Welcome/Welcome'
-import './Homepage.css'
-import BasicScene from '../../components/3DObject/3DObject'
-import BasicAnimation from '../../components/BasicAnimation/BasicAnimation'
+import Welcome from "../../components/Welcome/Welcome";
+import "./Homepage.css";
+import RamenScroll from "../../components/RamenScroll/RamenScroll";
 
 function Homepage() {
+
   return (
     <div className='homepage-container'>
-      <Welcome />
-      <br />
-      <BasicScene />
-      <BasicAnimation /> 
+      <div className="ramen-bowl-container">
+        <RamenScroll />
+      </div>
+      <div className="left-homepage-container">     
+      </div>
+      <div className="right-homepage-container">
+        <Welcome />
+      </div>
     </div>
-  )
+  );
 }
 
-export default Homepage
+export default Homepage;
