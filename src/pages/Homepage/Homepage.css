@@ -10,10 +10,42 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  overflow: hidden;
+  position: relative;
+  overflow: visible;
+  z-index: 0;
 }
-
 .right-homepage-container {
   width: 50vw;
   height: 2000px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.Welcome-container{
+  background-color: var(--color-boxes-cards);
+  width: 80%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  margin-top: 200px;
+}
+@media (max-width: 1024px) {
+  .homepage-container{
+    flex-direction: column;
+  }
+  .left-homepage-container {
+    width: 100vw;
+    height: 300px;
+    margin-top: 200px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .ramen-bowl-item {
+    width: 150px; /* Decrease the width for phones */
+    height: 150px; /* Decrease the height for phones */
+  }
 }
