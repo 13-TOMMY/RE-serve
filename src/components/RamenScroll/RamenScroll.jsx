@@ -1,19 +1,19 @@
 import React from 'react';
 import { Canvas } from '@react-three/fiber';
 import './RamenScroll.css';
-import Object from '../Objects/ScrollAnimation/ObjectED';
+import ObjectST from '../Objects/ScrollAnimation/ObjectSpinTilt';
 
 const RamenScroll = () => {
   const ramenPosition = [0, 2, -20];
-  const ramenRotation = [7, Math.PI / 10, 0];
-  const ramenScale = [0.5, 0.5, 0.5]; // Set the scale [x, y, z]
+  const ramenRotation = [7, Math.PI / 15, 0];
+  const ramenScale = [0.8, 0.8, 0.8]; // Set the scale [x, y, z]
 
   return (
     <div className='ramen-scroll-container' >
       <Canvas>
         <ambientLight />
         <pointLight />
-        <Object url="src/assets/models/ramen.glb" position={ramenPosition} rotation={ramenRotation} scale={ramenScale} />
+        <ObjectST url="src/assets/models/ramen.glb" position={ramenPosition} rotation={ramenRotation} scale={ramenScale} />
       </Canvas>
     </div>
   );

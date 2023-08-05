@@ -9,20 +9,11 @@
   height: 2000px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  overflow: hidden; /* Add this to prevent content overflow */
+  align-items: flex-start;
+  overflow: hidden;
 }
 
 .right-homepage-container {
   width: 50vw;
   height: 2000px;
-}
-
-.ramen-bowl-container {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
