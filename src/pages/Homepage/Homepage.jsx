@@ -4,14 +4,15 @@ import "./Homepage.css";
 import RamenScroll from "../../components/RamenScroll/RamenScroll";
 
 function Homepage() {
-
   return (
-    <div className='homepage-container'>
-      <div className="left-homepage-container">  
-      <RamenScroll />  
+    <div className="homepage-container">
+      <div className="left-homepage-container">
+        <RamenScroll className="ramen-bowl-item" />
       </div>
       <div className="right-homepage-container">
-        <Welcome />
+        <div className="Welcome-container">
+          <Welcome />
+        </div>
       </div>
     </div>
   );
