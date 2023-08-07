@@ -1,19 +1,24 @@
 import { useEffect } from "react";
 import Welcome from "../../components/Welcome/Welcome";
 import "./Homepage.css";
-import RamenScroll from "../../components/RamenScroll/RamenScroll";
+import Banner from "../../components/Banner/Banner";
+import About from "../../components/About/About";
 
 function Homepage() {
   return (
     <div className="homepage-container">
-      <div className="left-homepage-container">
-        <RamenScroll className="ramen-bowl-item" />
-      </div>
-      <div className="right-homepage-container">
-        <div className="Welcome-container">
-          <Welcome />
+      <Banner />
+      <div className="homepage-middle-container">
+        <div className="left-homepage-m-container">
+          <div className="Welcome-container">
+            <Welcome />
+          </div>
+        </div>
+        <div className="right-homepage-m-container">
+          <About />
         </div>
       </div>
+      <div className="homepage-bottom-container"></div>
     </div>
   );
 }

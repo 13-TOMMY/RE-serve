@@ -75,12 +75,6 @@
     font-style: normal;
     font-weight: 700;
 }
-@keyframes colorChangeAnimation {
-    0% { color: var(--color-text); } 
-    40% { color: var(--color-button-secondary); } 
-    70% { color: var(--color-button-hover); } 
-    100% { color: #4B5320; }
-  }
 .serve-logo-h{
     color: var(--color-accent);
     font-family: Croissant One;
@@ -88,7 +82,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    animation: colorChangeAnimation 3s ease-out;
 }
 /*Right*/
 .account-btns-h{
