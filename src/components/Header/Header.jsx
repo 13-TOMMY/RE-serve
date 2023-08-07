@@ -47,7 +47,7 @@ function Header() {
         )}
       </div>
       <div className="logo-h-container">
-        <h1 className='re-logo-h'>RE:</h1>
+        <h2 className='re-logo-h'>RE:</h2>
         <h2 className='serve-logo-h'>serve</h2>
       </div>
       <div className='account-btns-h'>
