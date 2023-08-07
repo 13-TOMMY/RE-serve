@@ -1,0 +1,64 @@
+.image-carousel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.btnsIC {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.btnsIC button {
+  background-color: transparent;
+  border: none;
+}
+
+.leftArrowIC,
+.rightArrowIC {
+  font-size: 48px;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.leftArrowIC:hover,
+.rightArrowIC:hover {
+  color: var(--color-button-hover);
+}
+
+.indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #666666;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background: var(--color-button-hover);
+}

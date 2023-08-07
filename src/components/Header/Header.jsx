@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { HiMenuAlt4 } from 'react-icons/hi';
+import { motion } from 'framer-motion'; 
 import './Header.css';
 
 function Header() {
@@ -32,6 +33,21 @@ function Header() {
   const isReservation = location.pathname === '/personal-reservations';
   const isProfile = location.pathname === '/profile';
 
+  const buttonVariants = {
+    initial: {
+      scale: 1,
+      opacity: 1,
+    },
+    hover: {
+      scale: 1.1,
+      opacity: 0.9,
+    },
+    tap: {
+      scale: 0.9,
+      opacity: 1,
+    },
+  };
+
   return (
     <div className='header-conatiner'>
       <div className='menu-btn-h'>
@@ -51,8 +67,26 @@ function Header() {
         <h2 className='serve-logo-h'>serve</h2>
       </div>
       <div className='account-btns-h'>
-        <button className='login-a-btn a-btn' onClick={() => navigate("/login")}>Log in</button>
-        <button className='signup-a-btn a-btn' onClick={() => navigate("/signup")}>Sign up</button>
+        <motion.button
+          className='login-a-btn a-btn'
+          onClick={() => navigate("/login")}
+          variants={buttonVariants}
+          initial="initial"
+          whileHover="hover"
+          whileTap="tap"
+        >
+          Log in
+        </motion.button>
+        <motion.button
+          className='signup-a-btn a-btn'
+          onClick={() => navigate("/signup")}
+          variants={buttonVariants}
+          initial="initial"
+          whileHover="hover"
+          whileTap="tap"
+        >
+          Sign up
+        </motion.button>
       </div>
     </div>
   );
