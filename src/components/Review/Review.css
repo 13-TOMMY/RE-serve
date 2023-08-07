@@ -1,0 +1,40 @@
+.review-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 400px;
+  height: min(300px, fit-content);
+  border: 2px solid var(--color-text);
+  border-radius: 12px;
+  padding: 20px 0;
+  gap: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+}
+.top-review-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: fit-content;
+  width: 80%;
+  color: var(--color-text);
+  font-family: Montserrat;
+  font-size: 18px;
+}
+.top-review-container :first-child {
+  font-size: 28px;
+}
+.top-review-container :last-child {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+}
+.bottom-review-container {
+  height: fit-content;
+  width: 80%;
+  color: var(--color-text);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+}

@@ -1,116 +1,138 @@
-.header-conatiner{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    height: 90px;
-    width: 100vw;
-    padding: 0 50px;
-    background-color: var(--color-boxes-cards);
-    z-index: 999;
+.header-conatiner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  height: 90px;
+  width: 100vw;
+  padding: 0 50px;
+  background-color: var(--color-boxes-cards);
+  z-index: 999;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
 }
 /*Left*/
-.menu-btn-h{
-    width: 33.3%;
+.menu-btn-h {
+  width: 33.3%;
 }
-.menu-logo-h{
-    color: var(--color-text);
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    transition: 2s;
+.menu-logo-h {
+  color: var(--color-text);
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: 2s;
 }
-.open-h{
-    color: var(--color-button-hover);
-    transform: rotate(-270deg);
+.open-h {
+  color: var(--color-button-hover);
+  transform: rotate(-270deg);
 }
-.close-h{
-    color: var(--color-text);
-    transform: rotate(0deg);
+.close-h {
+  color: var(--color-text);
+  transform: rotate(0deg);
 }
 /*menu di*/
 .menu-div-container {
-    position: absolute;
-    top: 90px;
-    left: 0;
-    width: 100vw;
-    height: 40px;
-    background-color: var(--color-boxes-cards);
-    border-radius: 0 0 6px 6px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
+  position: absolute;
+  top: 90px;
+  left: 0;
+  width: 100vw;
+  height: 30px;
+  background-color: var(--color-boxes-cards);
+  border-radius: 0 0 6px 6px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding-bottom: 2px;
+  transition: 5ms;
 }
-.link-md-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+
+.link-md-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
-.text-md-link{
-    color: var(--color-text);
-    font-family: Montserrat;
-    font-size: 18px;
-    font-weight: 600;
-    width: fit-content;
-    height: 20px;
+.text-md-link {
+  color: var(--color-text);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  width: fit-content;
+  height: 20px;
 }
-.selected-link{
-    color: var(--color-button-hover);
-    font-family: Croissant One;
-    font-size: 18px;
-    font-weight: 400;
+.selected-link {
+  color: var(--color-button-hover);
+  font-family: Croissant One;
+  font-size: 18px;
+  font-weight: 400;
 }
 /*Middle*/
-.logo-h-container{
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    gap: 10px;
-    width: 33.3%;
+.logo-h-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 10px;
+  width: 33.3%;
 }
-.re-logo-h{
-    color: var(--color-text);
-    font-family: Montserrat;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 700;
+.re-logo-h {
+  color: var(--color-text);
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
 }
-.serve-logo-h{
-    color: var(--color-accent);
-    font-family: Croissant One;
-    font-size: 44px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+.serve-logo-h {
+  color: var(--color-accent);
+  font-family: Croissant One;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 /*Right*/
-.account-btns-h{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    height: 100%;
-    gap: 10px;
-    width: 33.3%;
+.account-btns-h {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  gap: 10px;
+  width: 33.3%;
 }
-.a-btn{
-    width: 90px;
-    height: 35px;
-    color: var(--color-text);
-    font-family: Montserrat;
-    font-size: 18px;
-    font-weight: 500;
-    border-radius: 12px;
-    cursor: pointer;
-    border: none;
-    transition: 1s;
-} 
-.login-a-btn{
-    background-color: var(--color-accent);
+.a-btn {
+  width: 90px;
+  height: 35px;
+  color: var(--color-text);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 12px;
+  cursor: pointer;
+  border: none;
+  transition: 1s;
 }
-.signup-a-btn{
-    background-color: var(--color-button-secondary);
+.login-a-btn {
+  background-color: var(--color-accent);
 }
-.login-a-btn:hover, .signup-a-btn:hover{
-    background-color: var(--color-boxes-cards);
-    border: 1px solid var(--color-button-secondary);
+.signup-a-btn {
+  background-color: var(--color-button-secondary);
+}
+.login-a-btn:hover,
+.signup-a-btn:hover {
+  background-color: var(--color-boxes-cards);
+  border: 1px solid var(--color-button-secondary);
+}
+@media (max-width: 768px) {
+  .header-conatiner {
+    padding: 10px 0;
+  }
+  .menu-btn-h {
+    padding-left: 10px;
+  }
+  .serve-logo-h {
+    display: none;
+  }
+  .account-btns-h {
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 10px;
+  }
 }

@@ -89,23 +89,31 @@ input {
   margin: 0 10px;
   color: var(--color-text);
 }
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
     .contacts-container{
       flex-direction: column;
       justify-content: space-around;
       align-items: flex-start;
-      height: 700px;
+      height: 500px;
       padding: 10% 10%;
     }
     .contacts-left{
       height: 50%;
       width: 100%;
+
     }
     .contacts-right{
       height: 50%;
       width: 100%;
       justify-content: center;
+      align-items: flex-start;
+      text-align: start;
       gap: 2%;
       width: 100%;
     }
-  } */
+    .social-wrapper{
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+  }

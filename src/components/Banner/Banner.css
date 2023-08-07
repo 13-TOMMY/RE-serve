@@ -1,5 +1,5 @@
 .banner-container {
-  margin-top: 150px;
+  margin: 150px 50px 0 50px;
   height: 70vh;
   border-radius: 12px 12px;
   display: flex;
@@ -7,11 +7,12 @@
   align-items: center;
   justify-content: center;
   border: 2px solid var(--color-text);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
 }
 .h1-top-header {
   position: absolute;
   top: 23vh;
-  left: 7%;
+  left: 10%;
   width: 450px;
   color: var(--color-text);
   font-family: Montserrat;
@@ -42,7 +43,7 @@
   position: absolute;
   top: 50vh;
   width: 300px;
-  right: 7%;
+  right: 10%;
   text-align: end;
   color: var(--color-text);
   font-family: Montserrat;
@@ -56,7 +57,7 @@
 }
 .btn-banner {
   position: absolute;
-  top: 78vh;
+  top: 75vh;
   width: 200px;
   height: 50px;
   background-color: var(--color-button);
@@ -70,4 +71,20 @@
   font-family: Montserrat;
   font-size: 18px;
   font-weight: 500;
+}
+@media (max-width: 1024px) {
+  .h1-top-header{
+    left: 10;
+    width: 80%;
+    text-align: center;
+    font-size: 52px;
+  }
+  .h2-bottom-header{
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .h1-top-header{
+    font-size: 36px;
+  }
 }

@@ -14,7 +14,6 @@ function Welcome() {
         <span>v</span>
         <span>e</span>
       </h4>
-      <h2>Normality, Reconnect with Life.</h2>
     </div>
   );
 }
