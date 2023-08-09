@@ -91,9 +91,13 @@
 /*Right*/
 .signup-right {
   width: 50%;
-  height: 50vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.neon-tilt-su {
+  height: 100%;
+  width: 100%;
 }
