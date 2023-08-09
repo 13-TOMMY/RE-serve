@@ -23,7 +23,7 @@ const ObjectST = ({ url, position, rotation, scale, ...props }) => {
 
   useFrame((state, delta) => {
     if (!hovered) {
-      mesh.current.rotation.y += 0.0005;
+      mesh.current.rotation.y += 0.005;
     }
   });
 
