@@ -3,6 +3,7 @@ import { auth } from "../../config/firebaseConfig";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
+import NeonTilt from "../../components/NeonTilt/NeonTilt";
 import "./SignUp.css";
 
 function SignUp() {
@@ -87,7 +88,9 @@ function SignUp() {
           </p>
         </div>
       </div>
-      <div className="signup-right"></div>
+      <div className="signup-right">
+        <NeonTilt className="neon-tilt-su"/>
+      </div>
     </div>
   );
 }
