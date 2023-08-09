@@ -35,7 +35,7 @@
 .contacts-left input {
   width: 80%;
 }
-input {
+.moreinfo-input{
   width: 440px;
   height: 48px;
   flex-shrink: 0;
