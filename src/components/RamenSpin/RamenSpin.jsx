@@ -4,7 +4,7 @@ import ObjectST from "../../Objects/SpinTilt/ObjectSpinTilt";
 import "./RamenSpin.css";
 
 const RamenScroll = () => {
-  const ramenPosition = [0, 0, -20];
+  const ramenPosition = [0, 0, -15];
   const ramenRotation = [7, Math.PI / 15, 0];
   const ramenScale = [0.8, 0.8, 0.8];
 
