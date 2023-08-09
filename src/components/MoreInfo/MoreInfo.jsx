@@ -32,14 +32,17 @@ function MoreInfo() {
           </p>
           <input
             type="email"
+            className={`moreinfo-input ${!isValidEmail ? "invalid-email" : ""}`}
             placeholder="Your email"
             value={inputValue}
             onChange={handleInputChange}
             onKeyUp={handleKeyUp}
-            className={!isValidEmail ? "invalid-email" : ""}
           />
+
           {!isValidEmail && (
-            <h4 className="error-message">Please enter a valid email address.</h4>
+            <h4 className="error-message">
+              Please enter a valid email address.
+            </h4>
           )}
         </div>
         <div className="contacts-right">

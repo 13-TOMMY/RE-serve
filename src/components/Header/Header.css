@@ -97,6 +97,47 @@
   gap: 10px;
   width: 33.3%;
 }
+/*logged in*/
+.accounts-welcome-user{
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 50px;
+}
+.text-loggedin{
+  color: var(--color-text);
+  font-size: 18px;
+  font-weight: 600;
+}
+.text-loggedin p{
+  font-family: var(--script-font);
+
+}
+.text-loggedin span{
+  font-family: var(--modern-font);
+}
+.logout-a-btn{
+  height: 50px;
+  width: 50px;
+  color: var(--color-text);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 12px;
+  cursor: pointer;
+  border: none;
+  transition: 1s;
+  background-color: var(--color-button);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signout-btn{
+  font-size: 26px;
+}
+/*Log in/sign up*/
 .a-btn {
   width: 90px;
   height: 35px;
@@ -116,7 +157,8 @@
   background-color: var(--color-button-secondary);
 }
 .login-a-btn:hover,
-.signup-a-btn:hover {
+.signup-a-btn:hover,
+.logout-a-btn:hover {
   background-color: var(--color-boxes-cards);
   border: 1px solid var(--color-button-secondary);
 }
