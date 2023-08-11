@@ -88,10 +88,10 @@ function Header() {
           </div>
         )}
       </div>
-      <div className="logo-h-container">
+      <Link className="logo-h-container" to={'/'}>
         <h2 className="re-logo-h">RE:</h2>
         <h2 className="serve-logo-h">serve</h2>
-      </div>
+      </Link>
       <div className="account-btns-h">
         {user ? (
           <div className="accounts-welcome-user">

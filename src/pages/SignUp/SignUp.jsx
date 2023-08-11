@@ -41,9 +41,10 @@ function SignUp() {
     <div className="signup-container">
       <div className="signup-left">
         <div className="left-container-su">
-            <h2>Sign up with your email</h2>
+          <h2>Create Your RE:serve Account</h2>
           <form onSubmit={handleSignup} className="signup-form">
             <div className="su-form-group">
+              <p>Name:</p>
               <input
                 type="text"
                 className="su-form"
@@ -52,6 +53,7 @@ function SignUp() {
                 onChange={(e) => setName(e.target.value)}
                 value={name}
               />
+              <p>Email:</p>
               <input
                 type="email"
                 className="su-form"
@@ -60,6 +62,7 @@ function SignUp() {
                 onChange={(e) => setEmail(e.target.value)}
                 value={email}
               />
+              <p>Password:</p>
               <input
                 type="password"
                 className="su-form"
@@ -83,13 +86,13 @@ function SignUp() {
           <p className="su-last-p">
             Already have an account?{" "}
             <span className="su-form-link" onClick={() => navigate("/login")}>
-              Log in
+              Log in here !
             </span>
           </p>
         </div>
       </div>
       <div className="signup-right">
-        <NeonTilt className="neon-tilt-su"/>
+        <NeonTilt className="neon-tilt-su" />
       </div>
     </div>
   );

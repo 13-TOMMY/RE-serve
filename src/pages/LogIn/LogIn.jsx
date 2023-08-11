@@ -39,9 +39,10 @@ function LogIn() {
     <div className="login-container">
       <div className="login-left">
         <div className="left-container-li">
-          <h2>Login with your email</h2>
+          <h2>Welcome Back - Log In</h2>
           <form onSubmit={handleLogin} className="login-form">
             <div className="li-form-group">
+              <p>Email:</p>
               <input
                 type="email"
                 className="li-form"
@@ -50,6 +51,7 @@ function LogIn() {
                 onChange={(e) => setEmail(e.target.value)}
                 value={email}
               />
+              <p>Password:</p>
               <input
                 type="password"
                 className="li-form"
@@ -73,7 +75,7 @@ function LogIn() {
           <p className="li-last-p">
             Don't have an account?{" "}
             <span className="li-form-link" onClick={() => navigate("/signup")}>
-              Sign up
+              Sign up here !
             </span>
           </p>
         </div>
