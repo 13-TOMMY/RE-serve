@@ -14,6 +14,7 @@ function SignUp() {
 
   const handleSignup = (e) => {
     e.preventDefault();
+
     createUserWithEmailAndPassword(auth, email, password)
       .then((res) => {
         updateProfile(auth.currentUser, { displayName: name });

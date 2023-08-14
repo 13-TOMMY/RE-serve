@@ -1,0 +1,15 @@
+.profile-container {
+  padding: 150px 50px 0 50px;
+  height: 1000px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+/*Left*/
+.left-profile-container {
+  width: 70%;
+}
+/*Right*/
+.right-profile-container {
+  width: 30%;
+}
