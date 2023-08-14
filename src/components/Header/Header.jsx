@@ -74,12 +74,6 @@ function Header() {
               Reserve
             </Link>
             <Link
-              className={`text-md-link ${isReservation ? "selected-link" : ""}`}
-              to={`/personal-reservations`}
-            >
-              Reservations
-            </Link>
-            <Link
               className={`text-md-link ${isProfile ? "selected-link" : ""}`}
               to={`/profile`}
             >
