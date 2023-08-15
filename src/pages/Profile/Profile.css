@@ -8,8 +8,10 @@
 /*Left*/
 .left-profile-container {
   width: 70%;
+  height: 100%;
 }
 /*Right*/
 .right-profile-container {
   width: 30%;
+  height: 100%;
 }
