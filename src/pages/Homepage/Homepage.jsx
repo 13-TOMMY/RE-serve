@@ -12,10 +12,10 @@ import "./Homepage.css";
 
 function Homepage() {
   const images = [
-    "src/assets/homepage-images/seating-picture.jpeg",
-    "src/assets/homepage-images/outside-res-seating.jpeg",
-    "src/assets/homepage-images/inside-res-plant.jpeg",
-    "src/assets/homepage-images/inside-bar-res.jpeg",
+    "/assets/homepage-images/seating-picture.jpeg",
+    "/assets/homepage-images/outside-res-seating.jpeg",
+    "/assets/homepage-images/inside-res-plant.jpeg",
+    "/assets/homepage-images/inside-bar-res.jpeg",
   ];
   return (
     <div className="homepage-container">

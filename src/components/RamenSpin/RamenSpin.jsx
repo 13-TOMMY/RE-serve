@@ -20,7 +20,7 @@ const RamenScroll = () => {
         <ambientLight />
         <pointLight />
         <ObjectST
-          url="src/assets/models/ramen.glb"
+          url="/assets/models/ramen.glb"
           position={ramenPosition}
           rotation={ramenRotation}
           scale={ramenScale}

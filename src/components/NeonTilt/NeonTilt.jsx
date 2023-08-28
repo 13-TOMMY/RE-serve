@@ -19,7 +19,7 @@ function NeonTilt() {
         <ambientLight />
         <pointLight />
         <Tilt
-          url="src/assets/models/neon_signs.glb"
+          url="/assets/models/neon_signs.glb"
           position={objectPosition}
           scale={objectScale}
         />
